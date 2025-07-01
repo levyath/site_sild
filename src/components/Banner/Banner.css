@@ -1,0 +1,91 @@
+.container-banner {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5%;
+  box-sizing: border-box;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.75;
+  scale: 1;
+}
+
+.content-overlay {
+  position: relative;
+  z-index: 1;
+  max-width: 550px;
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 2rem 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(3px);
+  text-align: left;
+}
+
+.content-overlay h1 {
+  font-size: 2.5rem;
+  color: #183861;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.content-overlay p {
+  font-size: 1.15rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.content-overlay button {
+  padding: 1rem 2.5rem;
+  border-radius: 1rem;
+  background-color: #183861;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.content-overlay button:hover {
+  background-color: white;
+  color: #183861;
+  border: 2px solid #183861;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container-banner {
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1rem;
+    height: auto;
+  }
+
+  .content-overlay {
+    max-width: 100%;
+    margin-top: 2rem;
+    padding: 1.5rem;
+  }
+
+  .content-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .content-overlay p {
+    font-size: 1rem;
+  }
+}
