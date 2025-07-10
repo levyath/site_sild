@@ -1,17 +1,17 @@
-import "./Login.css";
-import bkgLogin from "../../assets/bkglogin1.webp"; // coloque aqui a imagem desejada (ex: cidade, carro, etc.)
+import "./Register.css";
+import bkgRegister from "../../assets/bkglogin1.webp"; // coloque aqui a imagem desejada (ex: cidade, carro, etc.)
 import logo from "../../assets/logo_footer.png";
 
-export default function Login() {
+export default function Register() {
   return (
-    <div className="login-container">
+    <div className="register-container">
       <div
-        className="login-left"
-        style={{ backgroundImage: `url(${bkgLogin})` }}
+        className="register-left"
+        style={{ backgroundImage: `url(${bkgRegister})` }}
       >
         <div className="left-overlay">
           <a href="/">
-            <img src={logo} alt="Logo" className="login-logo" />
+            <img src={logo} alt="Logo" className="register-logo" />
           </a>
           <div className="container-text">
             <div className="left-text">
@@ -30,9 +30,9 @@ export default function Login() {
         </div>
       </div>
 
-      <div className="login-right">
-        <div className="login-box">
-          <h2>Acesse sua conta</h2>
+      <div className="register-right">
+        <div className="register-box">
+          <h2>Crie sua conta</h2>
           <form>
             <div className="form-group">
               <label htmlFor="email">E-mail</label>
@@ -55,12 +55,12 @@ export default function Login() {
             </div>
 
             <button type="submit" className="login-button">
-              Entrar
+              Registrar-se
             </button>
           </form>
 
           <p className="signup-link">
-            Não tem uma conta? <a href="/register">Cadastre-se</a>
+            Ja possui uma conta? <a href="/login">Entrar</a>
           </p>
         </div>
       </div>
