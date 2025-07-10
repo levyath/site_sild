@@ -19,7 +19,7 @@ export default function NavBar() {
               {/* <figure>
                 <img src={homeIcon} alt="Home" />
               </figure> */}
-              <a href="#">HOME</a>
+              <a href="/">HOME</a>
             </li>
             <li className="ReservarAgora">
               {/* <figure>
