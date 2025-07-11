@@ -4,6 +4,7 @@ import Login from "../pages/Login/Login";
 import Reserva from "../pages/Reserva/Reserva";
 import Register from "../pages/Register/Register";
 import Pagamento from "../pages/Pagamento/Pagamento";
+import HomeAluguel from "../pages/Home/aluguel/aluguel";
 
 export default function Router() {
   return (
@@ -16,6 +17,8 @@ export default function Router() {
         {/*<Route path="/minha-reserva" element={<Login />} />*/}
 
         <Route path="/pagamento" element={<Pagamento />} />
+
+        <Route path="/aluguel" element={<HomeAluguel />} />
 
       </Routes>
   );

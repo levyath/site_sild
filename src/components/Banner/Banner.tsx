@@ -29,12 +29,14 @@ export default function Banner() {
                     </p>
 
                     <div className="btns">
-                        <button className="aproveite">
-                            Reserve agora!{" "}
-                            <i>
-                                <Icon icon="cuida:arrow-right-outline" />
-                            </i>
-                        </button>
+                        <a href="/aluguel">
+                            <button className="aproveite">
+                                Reserve agora!{" "}
+                                <i>
+                                    <Icon icon="cuida:arrow-right-outline" />
+                                </i>
+                            </button>
+                        </a>
                     </div>
                 </div>
 
