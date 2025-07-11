@@ -20,7 +20,7 @@ const HomeAluguel: React.FC = () => {
 
                     <div className="inputs">
                         <InputSelect icon={"mdi:location"} label={"Local de retirada"} options={options} />
-                        <InputDate icon={"mdi:location"} label={"Local de retirada"} />
+                        <InputDate icon={"mdi:location"} label={"Data de retirada"} />
                     </div>
                 </div>
             </section>

@@ -14,7 +14,7 @@ export default function NavBar() {
                 <nav className="navegacao">
                     <ul className="menus">
                         <li className="HomePage">
-                            <a href="#">HOME</a>
+                            <a href="/">HOME</a>
                         </li>
                         <li className="ReservarAgora">
                             <a href="#">RESERVAR AGORA</a>
@@ -23,7 +23,7 @@ export default function NavBar() {
                             <a href="#">MINHAS RESERVAS</a>
                         </li>
                         <li className="Login">
-                            <a href="#">ENTRAR</a>
+                            <a href="/login">ENTRAR</a>
                         </li>
                     </ul>
                 </nav>
