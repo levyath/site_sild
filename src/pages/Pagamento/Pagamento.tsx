@@ -30,11 +30,13 @@ export default function Pagamento() {
       };
     }
     try {
-      await fetch("/api/pagamento", {
+      const response = await fetch("http://localhost:8080/pagamento", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
+
+      console.log(response);
       // Aqui você pode redirecionar ou mostrar mensagem de sucesso
     } catch (err) {
       // Trate o erro se necessário
