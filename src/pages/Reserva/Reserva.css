@@ -6,8 +6,8 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 2rem; /* espaço entre os dois blocos */
-  flex-wrap: wrap; /* responsivo */
+  gap: 2rem;
+  flex-wrap: wrap;
   flex-direction: row;
   box-sizing: border-box;
 }
@@ -16,6 +16,12 @@
 .reserva-container-veicles {
   width: 70%;
   min-width: 300px; /* garante layout responsivo em telas menores */
+  box-sizing: border-box;
+}
+
+.reserva-container-veicles {
+  width: 100%;
+  min-width: 300px;
   box-sizing: border-box;
 }
 
@@ -96,67 +102,97 @@
 }
 
 .veiculos-disponiveis h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #183861;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   font-weight: bold;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .veiculos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
   margin-top: 1rem;
 }
 
 .card-veiculo {
-  background-color: #fff;
-  border-radius: 1rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
-  padding: 1.5rem;
+  background: linear-gradient(135deg, #f8fafc 60%, #e9edf3 100%);
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 24px rgba(24, 56, 97, 0.10);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
   text-align: center;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1.5px solid #e0e6ef;
+  position: relative;
 }
 
 .card-veiculo:hover {
-  transform: translateY(-5px);
+  transform: translateY(-7px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(24, 56, 97, 0.16);
+  border-color: #18386133;
 }
 
-.card-veiculo img {
+.carro-img {
   width: 100%;
-  max-height: 140px;
+  max-height: 130px;
   object-fit: contain;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
+  filter: drop-shadow(0 2px 8px #18386122);
 }
 
 .card-veiculo h3 {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: #183861;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+.categoria {
+  color: #3a4a5d;
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.detalhes {
+  color: #5c6b7a;
+  font-size: 0.98rem;
   margin-bottom: 0.5rem;
 }
 
-.card-veiculo p {
-  color: #555;
-  font-size: 0.95rem;
-  margin: 0.2rem 0;
-}
-
-.card-veiculo button {
-  margin-top: 1rem;
-  background-color: #183861;
-  color: white;
-  border: none;
-  padding: 0.7rem 1.5rem;
-  border-radius: 0.5rem;
+.preco {
+  color: #1a7c3a;
+  font-size: 1.25rem;
   font-weight: bold;
-  font-size: 0.95rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
+  margin: 0.7rem 0 0.2rem 0;
 }
 
-.card-veiculo button:hover {
-  background-color: white;
+.preco span {
+  color: #3a4a5d;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.btn-reservar {
+  margin-top: 1rem;
+  background: linear-gradient(90deg, #183861 60%, #1a7c3a 100%);
+  color: #fff;
+  border: none;
+  padding: 0.85rem 2rem;
+  border-radius: 0.7rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #18386122;
+  transition: background 0.3s, color 0.3s, box-shadow 0.2s;
+  letter-spacing: 0.5px;
+}
+
+.btn-reservar:hover {
+  background: #fff;
   color: #183861;
   border: 2px solid #183861;
+  box-shadow: 0 4px 16px #18386122;
 }
