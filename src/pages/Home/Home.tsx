@@ -1,19 +1,22 @@
 import NavBar from "../../components/NavBar/NavBar";
 import Banner from "../../components/Banner/Banner";
 import Footer from "../../components/Footer/Footer";
-import "./Home.css";
-import SectionCards from "../../components/SectionCards/SectionCards";
+
+import "./style.min.css";
+import HomeAluguel from "./aluguel/aluguel";
 
 export default function Home() {
-  return (
-    <>
-      <NavBar />
-      <div className="page-content">
-        <Banner />
-        <SectionCards/>
-        {/* Aqui você pode incluir cards, seções, etc */}
-      </div>
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <NavBar />
+            <section className="container-body">
+                <Banner />
+
+                <div className="center">
+                    <HomeAluguel />
+                </div>
+            </section>
+            <Footer />
+        </>
+    );
 }

@@ -1,47 +1,33 @@
-import "./NavBar.css";
-import logoImg from "../../assets/logo.png";
-// import homeIcon from "../assets/home.svg";
-// import reservarIcon from "../assets/reservar.svg";
-// import reservasIcon from "../assets/reservas.svg";
-// import userIcon from "../assets/user.svg";
+import "./NavBar.min.css";
+import logoImg from "../../assets/logo_footer_s.png";
 
 export default function NavBar() {
-  return (
-    <div className="container-navbar">
-      <div className="logo">
-        <img src={logoImg} alt="Logo" />
-      </div>
+    return (
+        <div className="container-navbar">
+            <div className="limit">
+                <a href="/" className="logo">
+                    <figure>
+                        <img src={logoImg} alt="Logo" />
+                    </figure>
+                </a>
 
-      <div className="navegacao">
-        <nav>
-          <ul className="menus">
-            <li className="HomePage">
-              {/* <figure>
-                <img src={homeIcon} alt="Home" />
-              </figure> */}
-              <a href="#">HOME</a>
-            </li>
-            <li className="ReservarAgora">
-              {/* <figure>
-                <img src={reservarIcon} alt="Reservar Agora" />
-              </figure> */}
-              <a href="#">RESERVAR AGORA</a>
-            </li>
-            <li className="MinhasReservas">
-              {/* <figure>
-                <img src={reservasIcon} alt="Minhas Reservas" />
-              </figure> */}
-              <a href="#">MINHAS RESERVAS</a>
-            </li>
-            <li className="Login">
-              {/* <figure>
-                <img src={userIcon} alt="Entrar" />
-              </figure> */}
-              <a href="#">ENTRAR</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  );
+                <nav className="navegacao">
+                    <ul className="menus">
+                        <li className="HomePage">
+                            <a href="#">HOME</a>
+                        </li>
+                        <li className="ReservarAgora">
+                            <a href="#">RESERVAR AGORA</a>
+                        </li>
+                        <li className="MinhasReservas">
+                            <a href="#">MINHAS RESERVAS</a>
+                        </li>
+                        <li className="Login">
+                            <a href="#">ENTRAR</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    );
 }
